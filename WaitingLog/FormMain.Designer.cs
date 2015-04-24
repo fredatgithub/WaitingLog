@@ -66,7 +66,9 @@
       this.listViewResult = new System.Windows.Forms.ListView();
       this.timer1 = new System.Windows.Forms.Timer(this.components);
       this.labelTime = new System.Windows.Forms.Label();
+      this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
       this.menuStrip1.SuspendLayout();
+      this.tableLayoutPanelMain.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -323,9 +325,11 @@
       // 
       // buttonStartStop
       // 
-      this.buttonStartStop.Location = new System.Drawing.Point(43, 55);
+      this.buttonStartStop.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.buttonStartStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.buttonStartStop.Location = new System.Drawing.Point(3, 3);
       this.buttonStartStop.Name = "buttonStartStop";
-      this.buttonStartStop.Size = new System.Drawing.Size(75, 23);
+      this.buttonStartStop.Size = new System.Drawing.Size(449, 28);
       this.buttonStartStop.TabIndex = 2;
       this.buttonStartStop.Text = "Start";
       this.buttonStartStop.UseVisualStyleBackColor = true;
@@ -333,29 +337,49 @@
       // 
       // listViewResult
       // 
-      this.listViewResult.Location = new System.Drawing.Point(43, 97);
+      this.tableLayoutPanelMain.SetColumnSpan(this.listViewResult, 2);
+      this.listViewResult.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.listViewResult.Location = new System.Drawing.Point(3, 37);
       this.listViewResult.Name = "listViewResult";
-      this.listViewResult.Size = new System.Drawing.Size(829, 168);
+      this.listViewResult.Size = new System.Drawing.Size(905, 429);
       this.listViewResult.TabIndex = 3;
       this.listViewResult.UseCompatibleStateImageBehavior = false;
       // 
       // labelTime
       // 
       this.labelTime.AutoSize = true;
-      this.labelTime.Location = new System.Drawing.Point(164, 55);
+      this.labelTime.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.labelTime.Location = new System.Drawing.Point(458, 0);
       this.labelTime.Name = "labelTime";
-      this.labelTime.Size = new System.Drawing.Size(64, 17);
+      this.labelTime.Padding = new System.Windows.Forms.Padding(5);
+      this.labelTime.Size = new System.Drawing.Size(450, 34);
       this.labelTime.TabIndex = 4;
       this.labelTime.Text = "00:00:00";
+      // 
+      // tableLayoutPanelMain
+      // 
+      this.tableLayoutPanelMain.ColumnCount = 2;
+      this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+      this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+      this.tableLayoutPanelMain.Controls.Add(this.buttonStartStop, 0, 0);
+      this.tableLayoutPanelMain.Controls.Add(this.listViewResult, 0, 1);
+      this.tableLayoutPanelMain.Controls.Add(this.labelTime, 1, 0);
+      this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 28);
+      this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
+      this.tableLayoutPanelMain.RowCount = 2;
+      this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.462687F));
+      this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.53732F));
+      this.tableLayoutPanelMain.Size = new System.Drawing.Size(911, 469);
+      this.tableLayoutPanelMain.TabIndex = 5;
       // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(911, 291);
-      this.Controls.Add(this.labelTime);
-      this.Controls.Add(this.listViewResult);
-      this.Controls.Add(this.buttonStartStop);
+      this.ClientSize = new System.Drawing.Size(911, 497);
+      this.Controls.Add(this.tableLayoutPanelMain);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
       this.Name = "FormMain";
@@ -365,6 +389,8 @@
       this.Load += new System.EventHandler(this.FormMain_Load);
       this.menuStrip1.ResumeLayout(false);
       this.menuStrip1.PerformLayout();
+      this.tableLayoutPanelMain.ResumeLayout(false);
+      this.tableLayoutPanelMain.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -409,5 +435,6 @@
     private System.Windows.Forms.ListView listViewResult;
     private System.Windows.Forms.Timer timer1;
     private System.Windows.Forms.Label labelTime;
+    private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
   }
 }
