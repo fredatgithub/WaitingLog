@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\bin\Debug\WaitingLog.exe.config
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\bin\Debug\WaitingLog.exe
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\bin\Debug\WaitingLog.pdb
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.AboutBoxApplication.resources
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.FormMain.resources
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.exe
+c:\users\user\documents\visual studio 2015\Projects\WaitingLog\WaitingLog\obj\Debug\WaitingLog.pdb
