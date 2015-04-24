@@ -329,6 +329,7 @@
       this.buttonStartStop.TabIndex = 2;
       this.buttonStartStop.Text = "Start";
       this.buttonStartStop.UseVisualStyleBackColor = true;
+      this.buttonStartStop.Click += new System.EventHandler(this.buttonStartStop_Click);
       // 
       // listViewResult
       // 

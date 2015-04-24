@@ -77,5 +77,10 @@ namespace WaitingLog
     {
       SaveWindowValue();
     }
+
+    private void buttonStartStop_Click(object sender, EventArgs e)
+    {
+
+    }
   }
 }
