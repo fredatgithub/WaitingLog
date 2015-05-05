@@ -142,7 +142,19 @@ namespace WaitingLog
       Settings.Default.WindowWidth = Width;
       Settings.Default.WindowLeft = Left;
       Settings.Default.WindowTop = Top;
+      Settings.Default.LastLanguageUsed = ReturnLanguageInUse();
       Settings.Default.Save();
+    }
+
+    private string ReturnLanguageInUse()
+    {
+      string result = "English"; // default value
+      if (frenchToolStripMenuItem.Checked)
+      {
+        result = "French";
+      }
+      // add any other languages here
+      return result;
     }
 
     private void FormMainFormClosing(object sender, FormClosingEventArgs e)
