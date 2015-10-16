@@ -1,0 +1,4 @@
+language: csharp
+solution: WaitingLog.sln
+notifications:
+  email: false
